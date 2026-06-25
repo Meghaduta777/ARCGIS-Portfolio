@@ -1,1 +1,138 @@
-<img src="images/floodanalysis.png" alt="3D flood analysis map" class="project-image">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flood Analysis</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f7f9fc;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f6feb, #0b3d91);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 35px 20px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #0b3d91;
+      margin-top: 0;
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 1100px;
+      display: block;
+      margin: 25px auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+
+    .caption {
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #0b3d91;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0b3d91;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Flood Analysis</h1>
+    <p>
+      A GIS-based analysis of potential flooding using elevation data,
+      water-level scenarios, and urban building information.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This assignment explores how flooding could affect an urban area by combining
+        elevation data with building and land surface information. The analysis uses
+        GIS tools to visualise areas that may be more vulnerable under different
+        flood-height scenarios.
+      </p>
+    </section>
+
+    <section>
+      <h2>Flood Visualisation</h2>
+
+      <img src="images/floodanalysis.png" alt="3D flood analysis map" class="project-image">
+
+      <p class="caption">
+        3D flood analysis visualisation showing buildings, terrain, and simulated flood extent.
+      </p>
+
+      <p>
+        This visualisation shows the final result of my flood analysis. I used elevation data
+  to create several flood-height zones and displayed them together with building data in
+  a 3D scene. The coloured areas show the simulated spread of water across lower-lying
+  parts of the study area, while the building blocks help us see which buildings would be damaged
+      </p>
+    </section>
+
+    
+
+   
+
+    <p>
+      <a href="index.html">Back to homepage</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 GIS Student Portfolio</p>
+  </footer>
+</body>
+</html>

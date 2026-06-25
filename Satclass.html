@@ -1,90 +1,149 @@
-<section id="satellite-classification">
-  <h1>Land Cover Classification</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object-Based Unsupervised Classification</title>
 
-  <p>
-    This page presents my land cover classification work using satellite imagery.
-    The questions below guide the narrative for the assignment.
-  </p>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  <h2>Question 1: Value of Automated Land Cover Classification</h2>
-  <p>
-    Describe the value of automated land cover classification. Explain the difference
-    between supervised and unsupervised classification.
-  </p>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f7f9fc;
+      color: #222;
+      line-height: 1.6;
+    }
 
-  <h2>Question 2: Spatial Resolution</h2>
-  <p>
-    What is the approximate length and width of each pixel — the spatial resolution
-    of the Sentinel composite?
-  </p>
+    header {
+      background: linear-gradient(135deg, #1f6feb, #0b3d91);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
 
-  <h2>Question 3: Spectral Profile</h2>
-  <p>
-    Provide a screenshot of your spectral profile with at least four different land covers.
-  </p>
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
 
-  <figure>
-    <img src="images/spectral-profile.png" alt="Spectral profile showing at least four land cover types">
-    <figcaption>Figure 1: Spectral profile of different land cover types.</figcaption>
-  </figure>
+    header p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
 
-  <h2>Question 5: Unsupervised Pixel-Based Classification</h2>
-  <p>
-    Provide a screenshot of your unsupervised pixel-based classification.
-  </p>
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 35px 20px;
+    }
 
-  <figure>
-    <img src="images/unsupervised-pixel.png" alt="Unsupervised pixel-based land cover classification">
-    <figcaption>Figure 2: Unsupervised pixel-based classification.</figcaption>
-  </figure>
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
 
-  <h2>Question 6: Unsupervised Object-Based Classification</h2>
-  <p>
-    Provide a screenshot of your unsupervised object-based classification.
-    Preview only is fine.
-  </p>
+    h2 {
+      color: #0b3d91;
+      margin-top: 0;
+    }
 
-  <figure>
-    <img src="images/unsupervised-object.png" alt="Unsupervised object-based land cover classification">
-    <figcaption>Figure 3: Unsupervised object-based classification.</figcaption>
-  </figure>
+    .project-image {
+      width: 100%;
+      max-width: 1100px;
+      display: block;
+      margin: 25px auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
 
-  <h2>Question 7: Supervised Pixel-Based Classification</h2>
-  <p>
-    Provide a screenshot of your supervised pixel-based classification.
-  </p>
+    .caption {
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
 
-  <figure>
-    <img src="images/supervised-pixel.png" alt="Supervised pixel-based land cover classification">
-    <figcaption>Figure 4: Supervised pixel-based classification.</figcaption>
-  </figure>
+    a {
+      color: #0b3d91;
+      font-weight: bold;
+    }
 
-  <h2>Question 8: Confusion Matrix</h2>
-  <p>
-    What were the results of your confusion matrix? Explain the aim of a confusion matrix
-    and the difference between producer error and user error to your website visitors.
-  </p>
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0b3d91;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
 
-  <figure>
-    <img src="images/confusion-matrix.png" alt="Confusion matrix results for land cover classification">
-    <figcaption>Figure 5: Confusion matrix used to assess classification accuracy.</figcaption>
-  </figure>
+<body>
+  <header>
+    <h1>Object-Based Unsupervised Classification</h1>
+    <p>
+      A satellite image classification map created using an object-based unsupervised
+      classification workflow.
+    </p>
+  </header>
 
-  <h2>Question 9: NDVI</h2>
-  <p>
-    Provide a screenshot of NDVI with a color scheme appropriate for vegetation health.
-    Explain why this color scheme is appropriate for communicating vegetation health.
-    Also explain who the target audience is.
-  </p>
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This assignment uses satellite imagery to classify the landscape into different
+        surface-cover categories. For this version of the project, I chose an
+        object-based unsupervised classification approach. Instead of manually defining
+        every class from the start, the image is grouped into similar image objects
+        based on spectral and spatial characteristics.
+      </p>
+    </section>
 
-  <figure>
-    <img src="images/ndvi.png" alt="NDVI map showing vegetation health">
-    <figcaption>Figure 6: NDVI map showing vegetation health.</figcaption>
-  </figure>
+    <section>
+      <h2>Final Classification Map</h2>
 
-  <h2>Question 10: Reflection on Methods</h2>
-  <p>
-    What are the strengths and weaknesses of each of the methods you tried and shared above?
-    What unique insight did you find from each method? Were there any anomalies in the data?
-  </p>
-</section>
+      <img src="images/object_unsupervised.png" alt="Object-based unsupervised satellite classification map" class="project-image">
+
+      <p class="caption">
+        Object-based unsupervised classification map generated from satellite imagery.
+      </p>
+
+      <p>
+        The map shows the result of an object-based unsupervised classification. Areas
+        with similar spectral and spatial properties are grouped together into land-cover
+        classes. This allows broad surface patterns to be identified, such as vegetation,
+        water, built-up areas, and other land-cover types, even when the exact class
+        labels still require interpretation.
+      </p>
+    </section>
+
+    <section>
+      <h2>Brief Reflection</h2>
+      <p>
+        This classification is useful for quickly identifying major land-cover patterns
+        in the satellite image. However, because the classification is unsupervised, the
+        resulting classes need to be checked visually and interpreted carefully. Some
+        categories may overlap or require further refinement before they can be treated
+        as fully accurate land-cover classes.
+      </p>
+    </section>
+
+    <p>
+      <a href="index.html">Back to homepage</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 GIS Student Portfolio</p>
+  </footer>
+</body>
+</html>

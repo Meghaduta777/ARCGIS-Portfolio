@@ -1,0 +1,19 @@
+<section>
+  <h2>Final MCA Map</h2>
+
+  <img src="images/mca-final-map.png" alt="Final MCA suitability map" class="project-image">
+
+  <p class="caption">
+    Final MCA suitability map showing possible locations for green infrastructure in Maastricht.
+  </p>
+</section>
+
+<section>
+  <h2>MCA Workflow Diagram</h2>
+
+  <img src="images/mca-workflow-diagram.png" alt="MCA workflow diagram" class="project-image">
+
+  <p class="caption">
+    MCA workflow diagram showing the problem, criteria, data layers, GIS analysis, and decision stage.
+  </p>
+</section>
